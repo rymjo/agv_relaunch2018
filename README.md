@@ -11,3 +11,21 @@ Gulp Tasks
     gulp css compiles SCSS files into CSS and minifies the compiled CSS
     gulp js minifies the themes JS file
     gulp vendor copies dependencies from node_modules to the vendor directory
+    
+…or create a new repository on the command line
+
+echo "# agv_relaunch2018" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/rymjo/agv_relaunch2018.git
+git push -u origin master
+
+…or push an existing repository from the command line
+
+git remote add origin https://github.com/rymjo/agv_relaunch2018.git
+git push -u origin master
+
+…or import code from another repository
+
+You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
