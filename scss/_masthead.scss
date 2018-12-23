@@ -15,15 +15,17 @@ header.masthead {
       font-style: italic;
       line-height: 22px;
       margin-bottom: 25px;
+      -webkit-text-stroke-width: .25px;
+      -webkit-text-stroke-color: #0f45ff;
       @include serif-font;
-    }s
+    }
     .intro-heading {
       font-size: 50px;
       font-weight: 700;
       line-height: 50px;
       margin-bottom: 25px;
       -webkit-text-stroke-width: .25px;
-      -webkit-text-stroke-color: #808080;
+      -webkit-text-stroke-color: #0f45ff;
       @include heading-font;
     }
   }
