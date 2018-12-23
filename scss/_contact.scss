@@ -1,10 +1,13 @@
 // Styling for the contact section
 section#contact {
-  background-color: $gray-900;
+  background-color: $gray-700;
   background-image: url('../img/map-image.png');
   background-repeat: no-repeat;
   background-position: center;
   .section-heading {
+    color: $white;
+  }
+  .text-muted_local {
     color: $white;
   }
   .form-group {
@@ -17,8 +20,8 @@ section#contact {
       height: auto;
     }
     textarea.form-control {
-      height: 248px;
-    }
+    height: 248px;
+  }
   }
   .form-control:focus {
     border-color: $primary;
@@ -26,22 +29,21 @@ section#contact {
   }
   ::-webkit-input-placeholder {
     font-weight: 700;
-    color: $gray-400;
+    color: $gray-700;
     @include heading-font;
   }
   :-moz-placeholder {
     font-weight: 700;
-    color: $gray-400;
+    color: $gray-700;
     @include heading-font;
   }
   ::-moz-placeholder {
     font-weight: 700;
-    color: $gray-400;
+    color: $gray-700;
     @include heading-font;
   }
   :-ms-input-placeholder {
     font-weight: 700;
-    color: $gray-400;
     @include heading-font;
   }
 }

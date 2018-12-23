@@ -47,6 +47,9 @@
               <a class="nav-link js-scroll-trigger" href="#about">Über uns</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#price">Preise</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#team">Team</a>
             </li>
             <li class="nav-item">
@@ -299,13 +302,37 @@
       </div>
     </section>
 
-    <!-- Team -->
-    <section class="bg-light" id="team">
+    <!-- Pries -->
+    <section id="price" class="bg-light">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h2 class="section-heading text-uppercase">Preise</h2>
+            <h3 class="section-subheading text-muted">Unsere Preise sind so individuell wie Ihre Immobilie.</h3>
+            <p class="text-justify">
+              Gerne unterbreiten wir Ihnen ein Angebot aufgrund Ihrer Daten zur Immobilie.
+              Hierzu benötigen wir:
+            </p>
+            <ul class="text-left">
+              <li>Adresse der Liegenschaft</li>
+              <li>Anzahl der WEG-Einheiten getrennt nach Wohnungen und Gewerbeanteil</li>
+              <li>Anzahl evtl. vorhandener Garagen und /oder Stellplätze</li>
+              <li>Anzahl Eigentümer der Immobilie</li>
+              <li>Baujahr der Immobilie</li>
+              <li>Heizungsart</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section id="team">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Unser großartiges Team</h2>
+            <h3 class="section-subheading text-muted">Gemeinsam meistern wir jede Herausforderung.</h3>
           </div>
         </div>
         <div class="row">
@@ -391,7 +418,7 @@
     </section>
 
     <!-- Clients -->
-    <section class="py-5">
+    <!-- section class="py-5" class="bg-light">
       <div class="container">
         <div class="row">
           <div class="col-md-3 col-sm-6">
@@ -416,15 +443,23 @@
           </div>
         </div>
       </div>
-    </section>
+    </section -->
 
     <!-- Contact -->
     <section id="contact">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Contact Us</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h2 class="section-heading text-uppercase">Kontakt</h2>
+            <h3 class="section-subheading text-muted_local">
+              Anlagen- und Grundbesitz- Verwaltungsgesellschaft mbH<br>
+              Hausverwaltung<br>
+              Benderstraße 72<br>
+              40625 Düsseldorf<br>
+              Fon: 0211-929420<br>
+              Fax: 0211-9294217<br>
+              E-Mail: info@agvmbh.de
+            </h3>
           </div>
         </div>
         <div class="row">
@@ -433,28 +468,28 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
-                    <input class="form-control" id="name" type="text" placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name.">
+                    <input class="form-control" id="name" type="text" placeholder="Name" required="required" data-validation-required-message="Bitte geben Sie Ihren Namen an.">
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
-                    <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required" data-validation-required-message="Please enter your email address.">
+                    <input class="form-control" id="email" type="email" placeholder="E-Mail" required="required" data-validation-required-message="Bitte geben Sie Ihre E-Mail an.">
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
-                    <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required="required" data-validation-required-message="Please enter your phone number.">
+                    <input class="form-control" id="phone" type="tel" placeholder="Telefon">
                     <p class="help-block text-danger"></p>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
-                    <textarea class="form-control" id="message" placeholder="Your Message *" required="required" data-validation-required-message="Please enter a message."></textarea>
+                    <textarea class="form-control" id="message" placeholder="Ihre Nachricht" required="required" data-validation-required-message="Bitte geben Sie Ihre Nachricht an."></textarea>
                     <p class="help-block text-danger"></p>
                   </div>
                 </div>
                 <div class="clearfix"></div>
                 <div class="col-lg-12 text-center">
                   <div id="success"></div>
-                  <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
+                  <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Jetzt senden</button>
                 </div>
               </div>
             </form>
@@ -468,7 +503,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <span class="copyright">Copyright &copy; Your Website 2018</span>
+            <span class="copyright">Copyright &copy; agvmbh.de 2018</span>
           </div>
           <div class="col-md-4">
             <ul class="list-inline social-buttons">
@@ -492,10 +527,12 @@
           <div class="col-md-4">
             <ul class="list-inline quicklinks">
               <li class="list-inline-item">
-                <a href="#">Privacy Policy</a>
+                <a class="portfolio-link" data-toggle="modal" href="#imprintModal">
+                  Impressum
+                </a>
               </li>
               <li class="list-inline-item">
-                <a href="#">Terms of Use</a>
+                <a class="portfolio-link" data-toggle="modal" href="#privacyModal">Datenschutzerklärung</a>
               </li>
             </ul>
           </div>
@@ -701,6 +738,89 @@
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fas fa-times"></i>
                     Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Imprint Modal -->
+    <div class="portfolio-modal modal fade" id="imprintModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Impressum</h2>
+                  <p>
+                    Anlagen- und Grundbesitz-Verwaltungsgesellschaft mbH<br>
+                    Benderstraße 72<br>
+                    40625 Düsseldorf<br>
+                  </p>
+                  <ul class="list-inline">
+                    <li>Fon: 0211 – 92 94 20</li>
+                    <li>Fax: 0211 – 92 94 217</li>
+                    <li>E-Mail: info@agvmbh.de</li>
+                    <li>Website: www.agvmbh.de</li>
+                    <li>Registergericht: Amtsgericht Düsseldorf</li>
+                    <li>HRB-Nummer: 16350</li>
+                    <li>Umsatzsteuer Id-Nr: 133/5801/0190</li>
+                    <li>1. Geschäftsführer: Ilyas Ormankiran</li>
+                    <li>2. Geschäftsführer : Herr Domingos Miranda De Oliveira</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fas fa-times"></i>
+                    Schließen</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Privacy Modal -->
+    <div class="portfolio-modal modal fade" id="privacyModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Datenschutzerklärung</h2>
+                  <p class="item-intro text-muted">Haftung für Inhalte</p>
+                  <p class="text-justify">
+                    Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
+                    Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
+                  </p>
+                  <p class="item-intro text-muted">Haftung für Links</p>
+                  <p class="text-justify">
+                    Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.
+                    Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.
+                  </p>
+                  <p class="item-intro text-muted">Urheberrecht</p>
+                  <p class="text-justify">
+                    Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.
+                    Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
+                  </p>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fas fa-times"></i>
+                    Schließen</button>
                 </div>
               </div>
             </div>
