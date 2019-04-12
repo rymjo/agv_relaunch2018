@@ -25,10 +25,10 @@
     .nav-item {
       .nav-link {
         font-size: 90%;
-        font-weight: 400;
+        font-weight: 700;
         padding: 0.75em 0;
         letter-spacing: 1px;
-        color: white;
+        color: yellow;
         @include heading-font;
         &.active,
         &:hover {
@@ -49,6 +49,7 @@
     background-color: transparent;
     .navbar-brand {
       font-size: 1.75em;
+      font-weight: bolder;
       -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
       transition: all 0.3s;

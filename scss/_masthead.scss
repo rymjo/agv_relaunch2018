@@ -1,7 +1,7 @@
 // Styling for the masthead
 header.masthead {
   text-align: center;
-  color: #ffffff;
+  color: yellow;
   background-image: url('../img/header-bg.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -15,8 +15,8 @@ header.masthead {
       font-style: italic;
       line-height: 22px;
       margin-bottom: 25px;
-      -webkit-text-stroke-width: .25px;
-      -webkit-text-stroke-color: #0f45ff;
+    //  -webkit-text-stroke-width: .25px;
+     // -webkit-text-stroke-color: #0f45ff;
       @include serif-font;
     }
     .intro-heading {
@@ -24,8 +24,8 @@ header.masthead {
       font-weight: 700;
       line-height: 50px;
       margin-bottom: 25px;
-      -webkit-text-stroke-width: .25px;
-      -webkit-text-stroke-color: #0f45ff;
+     // -webkit-text-stroke-width: .25px;
+     // -webkit-text-stroke-color: #0f45ff;
       @include heading-font;
     }
   }
@@ -37,6 +37,8 @@ header.masthead {
       padding-bottom: 200px;
       .intro-lead-in {
         font-size: 40px;
+        font-weight: bolder;
+        color: yellow;
         font-style: italic;
         line-height: 40px;
         margin-bottom: 25px;
